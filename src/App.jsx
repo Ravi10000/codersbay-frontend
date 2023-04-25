@@ -4,6 +4,7 @@ import Header from './components/Header/Header'
 import MainUI from './components/MainUI/MainUI'
 import Services from './components/Services/Services'
 import TopServices from './components/TopServices/TopServices'
+import Register from './components/RegisterImg/Register'
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
       <MainUI />
       <Services />
       <TopServices />
+      <Register />
     </>
   )
 }
