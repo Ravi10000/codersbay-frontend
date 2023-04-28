@@ -1,7 +1,7 @@
 import React from 'react'
 import './MainUI.css';
-import Dropdown from 'react-bootstrap/Dropdown';
-import DropdownButton from 'react-bootstrap/DropdownButton';
+// import Dropdown from 'react-bootstrap/Dropdown';
+// import DropdownButton from 'react-bootstrap/DropdownButton';
 import CoderBay from './coderbay.png';
 import searchBar from './searchBar.png';
 const MainUI = () => {
@@ -10,7 +10,7 @@ const MainUI = () => {
             <div className='mainHeader diflex'>
                 <div className='firstMainH'>
                     <img className='' src={CoderBay} alt='logo' />
-                    <select name="cars" id="cars">
+                    <select className='servTwo' name="cars" id="cars">
                         <option value="volvo">Services</option>
                         <option value="saab">Services</option>
                         <option value="opel">Services</option>

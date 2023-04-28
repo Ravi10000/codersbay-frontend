@@ -1,0 +1,261 @@
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 48px 0px 0px;
+    gap: 40px;
+    isolation: isolate;
+
+    /* width: 1440px; */
+    height: 466px;
+
+    /* Gray/Gray 01 */
+
+    background: #1A232F;
+
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 42px;
+    /* background-color: purple; */
+    width: 80%;
+    height: 324px;
+}
+
+.secOne {
+    display: flex;
+    /* background-color: yellow; */
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 32px;
+
+    width: 285px;
+    height: 256px;
+
+}
+
+.data {
+    /* background-color: yellow; */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 24px;
+    /* background-color: pink; */
+    width: 285px;
+    height: 168px;
+}
+
+.phone {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    gap: 12px;
+
+    width: 285px;
+    height: 40px;
+    /* background-color: red; */
+}
+
+.email {
+    /* Auto layout */
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    gap: 12px;
+
+    width: 285px;
+    height: 40px;
+
+}
+
+address {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    gap: 12px;
+
+    width: 285px;
+    height: 40px;
+}
+
+.IconButton {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 12px;
+    gap: 8px;
+
+    width: 40px;
+    height: 40px;
+
+    /* Gray/Gray 02 */
+
+    background: #323E4D;
+    border-radius: 800px;
+}
+
+.Texts {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 8px;
+
+    width: 233px;
+    height: 36px;
+
+
+}
+
+.descTextOne {
+    width: 40px;
+    height: 12px;
+
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 100%;
+    /* identical to box height, or 12px */
+
+    display: flex;
+    align-items: center;
+
+    /* Gray/Gray 06 */
+
+    color: #B8BFC7;
+}
+
+.descTextTwo {
+    width: 177px;
+    height: 16px;
+
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 100%;
+    /* identical to box height, or 16px */
+
+    display: flex;
+    align-items: center;
+
+    /* White */
+
+    color: #FFFFFF;
+}
+
+.sec {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 24px;
+
+    width: 201px;
+    height: 324px;
+}
+
+.navHeading {
+    width: 140px;
+    height: 20px;
+
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 100%;
+    /* identical to box height, or 20px */
+
+    display: flex;
+    align-items: center;
+
+    color: #FFFFFF;
+
+}
+
+.navUls {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 20px;
+
+    width: 201px;
+    height: 232px;
+
+}
+
+.liItems {
+    width: 139px;
+    height: 16px;
+
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 100%;
+    /* identical to box height, or 16px */
+
+    display: flex;
+    align-items: center;
+
+    /* White */
+
+    color: #FFFFFF;
+
+
+}
+
+.navMainHeading {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 24px 0px;
+    gap: 8px;
+
+    width: 150px;
+    height: 68px;
+
+}
+
+.social {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    gap: 16px;
+
+    width: 152px;
+    height: 40px;
+}
+
+.socialDiv {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 12px;
+    gap: 8px;
+
+    width: 40px;
+    height: 40px;
+
+    /* Gray/Gray 02 */
+
+    background: #323E4D;
+    border-radius: 8px;
+}
