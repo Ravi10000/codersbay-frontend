@@ -134,3 +134,30 @@
 
     color: #1A232F;
 }
+
+@media only screen and (max-width: 1000px) {
+    .serviceContainer {
+        /* width: 50px !important; */
+        /* background-color: rebeccapurple; */
+        /* max-width: 50px ; */
+        width: 2vw;
+        height: 10vh;
+        /* padding-top: -50px; */
+        padding-top: 7px;
+    }
+
+    .imageOne {
+        width: 5vw;
+        height: 5vh;
+    }
+
+    .serviceActualCount {
+        font-size: 1.5vh;
+    }
+
+    .serviceCountries {
+        /* display: none; */
+        font-size: 1.2vh;
+        margin-top: -5px;
+    }
+}

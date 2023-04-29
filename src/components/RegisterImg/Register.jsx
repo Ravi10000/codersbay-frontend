@@ -7,8 +7,8 @@ const Register = () => {
             <div className='registerCenterDiv'>
                 <div className='registerImg'>
                     <div className='registerText'>
-                        <p className='registerHead1'> Let's talk about your project</p>
-                        <p className='registerHead2'> Lets make your hunt easier</p>
+                        <p className='registerHead1'>Let's talk about your project</p>
+                        <p className='registerHead2'>Lets make your hunt easier</p>
                     </div>
                     <img className='registerActualImg' src={registerImg} alt="RegisterImage" />
                 </div>

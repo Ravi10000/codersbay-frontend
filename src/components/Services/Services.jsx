@@ -35,17 +35,17 @@ const Services = () => {
             </div>
             <div className='ServiceCounts'>
                 <div className='serviceContainer'>
-                    <img src={globe} alt="" />
+                    <img className='imageOne' src={globe} alt="" />
                     <p className='serviceActualCount'>15+</p>
                     <p className='serviceCountries'>Countries</p>
                 </div>
                 <div className='serviceContainer'>
-                    <img src={globe} alt="" />
+                    <img className='imageOne' src={globe} alt="" />
                     <p className='serviceActualCount'>150+</p>
                     <p className='serviceCountries'>Agencies WorldWide</p>
                 </div>
                 <div className='serviceContainer'>
-                    <img src={globe} alt="" />
+                    <img className='imageOne' src={globe} alt="" />
                     <p className='serviceActualCount'>50+</p>
                     <p className='serviceCountries'>Projects</p>
                 </div>

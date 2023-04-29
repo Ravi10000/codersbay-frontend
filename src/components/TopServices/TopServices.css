@@ -79,3 +79,13 @@
     color: #1A232F;
     margin-bottom: 50px;
 }
+
+@media only screen and (max-width: 1000px) {
+    .topHeadline {
+        font-size: 5vh;
+    }
+
+    .topContainer {
+        gap: 10px;
+    }
+}

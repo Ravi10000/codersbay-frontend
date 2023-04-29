@@ -84,8 +84,8 @@
     padding: 12px 32px;
     font-family: 'Montserrat Alternates';
     font-style: normal;
-    width: 180px;
-    height: 50px;
+    width: 13vw;
+    height: 7vh;
     background: #FFFFFF;
     border-radius: 40px;
     border: none;
@@ -233,4 +233,74 @@
     color: #FFFFFF;
 }
 
-@media only screen and (max-width: 600px) {}
+@media only screen and (max-width: 1000px) {
+    .getButton {
+        margin-left: 70px;
+        width: 100px;
+        height: 40px;
+        /* background-color: rebeccapurple; */
+    }
+
+    .mainUIaboutus {
+        font-size: 12px;
+        position: relative;
+        right: -80px;
+        top: 10px;
+        /* width: 80px; */
+    }
+
+    .servTwo {
+        font-size: 10px;
+        position: relative;
+        top: 10px;
+        width: 65px;
+        margin-right: -20px;
+    }
+
+    .getText {
+        font-size: 15px;
+        /* background-color: red; */
+        width: 50px;
+        /* text-align: center; */
+        /* padding-left: -100px; */
+        position: relative;
+        top: -5px;
+        left: -7px;
+    }
+
+    .coderBayLogo {
+        width: 100px;
+    }
+
+    .mainTextOne {
+        font-size: 3vh;
+    }
+
+    .mainTextTwo {
+        font-size: 2vh;
+    }
+
+    .mainSeacrhBar {
+        /* background-color: rebeccapurple; */
+        width: 40vw;
+        height: 5vh;
+    }
+
+    .mainSearchText {
+        font-size: 15px;
+        /* padding-left50px; */
+        margin-left: -10px;
+    }
+
+    .seacrhImgBack {
+        position: relative;
+        left: -70px;
+        display: none;
+    }
+
+    .mainNav {
+        /* width: 110px; */
+        font-size: 4vh;
+        margin-top: 20vh;
+    }
+}
