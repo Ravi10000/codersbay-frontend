@@ -9,7 +9,7 @@ const MainUI = () => {
         <div className='mainUI'>
             <div className='mainHeader diflex'>
                 <div className='firstMainH'>
-                    <img className='' src={CoderBay} alt='logo' />
+                    <img className='coderBayLogo' src={CoderBay} alt='logo' />
                     <select className='servTwo' name="cars" id="cars">
                         <option value="volvo">Services</option>
                         <option value="saab">Services</option>

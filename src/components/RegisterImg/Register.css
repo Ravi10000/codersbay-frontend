@@ -1,5 +1,5 @@
 .register {
-    /* width:  ; */
+
     height: 100vh;
     /* background-color: red; */
     display: flex;
@@ -379,4 +379,19 @@
     flex: none;
     order: 1;
     flex-grow: 0;
+}
+
+@media only screen and (max-width: 600px) {
+    .regsiterForm {
+        display: none;
+    }
+
+    .registerActualImg {
+        width: 100vw;
+    }
+
+    .registerImg {
+        width: 100vw;
+        margin-left: 25px;
+    }
 }

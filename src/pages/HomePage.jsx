@@ -14,7 +14,7 @@ const HomePage = () => {
             <TopServices />
             <Register />
             <AboutUs />
-            <Navbar />
+            {/* <Navbar /> */}
         </div>
     )
 }

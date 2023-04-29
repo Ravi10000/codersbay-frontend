@@ -19,8 +19,8 @@ const Services = () => {
                 <div className='ServiceCard'><p className='cardText'>E-Commerce</p></div>
                 <div className='ServiceCard'><p className='cardText'>E-Commerce</p></div>
                 <div className='ServiceCard'><p className='cardText'>E-Commerce</p></div>
-                <div className='ServiceCard'><p className='cardText'>E-Commerce</p></div>
-                <div className='ServiceCard'><p className='cardText'>E-Commerce</p></div>
+                {/* <div className='ServiceCard'><p className='cardText'>E-Commerce</p></div> */}
+                {/* <div className='ServiceCard'><p className='cardText'>E-Commerce</p></div> */}
             </div>
             <div className='ServiceProviders'>
                 <p className='serviceClientHeading'>Our Clients</p>
