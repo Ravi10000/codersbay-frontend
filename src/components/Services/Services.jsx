@@ -13,14 +13,14 @@ const Services = () => {
         <div className='Services'>
             <div className='ServiceCards'>
                 <div className='ServiceCard'><p className='cardText'>E-Commerce</p></div>
-                <div className='ServiceCard'><p className='cardText'>E-Commerce</p></div>
-                <div className='ServiceCard'><p className='cardText'>E-Commerce</p></div>
-                <div className='ServiceCard'><p className='cardText'>E-Commerce</p></div>
-                <div className='ServiceCard'><p className='cardText'>E-Commerce</p></div>
-                <div className='ServiceCard'><p className='cardText'>E-Commerce</p></div>
-                <div className='ServiceCard'><p className='cardText'>E-Commerce</p></div>
-                <div className='ServiceCard'><p className='cardText'>E-Commerce</p></div>
-                <div className='ServiceCard'><p className='cardText'>E-Commerce</p></div>
+                <div className='ServiceCard'><p className='cardText'>Professional Service</p></div>
+                <div className='ServiceCard'><p className='cardText'>ERP and CRM</p></div>
+                <div className='ServiceCard'><p className='cardText'>Cloud Engineering</p></div>
+                <div className='ServiceCard'><p className='cardText'>IT Infrastructure</p></div>
+                <div className='ServiceCard'><p className='cardText'>Marketplace / SaaS</p></div>
+                <div className='ServiceCard'><p className='cardText'>Digital Marketing</p></div>
+                {/* <div className='ServiceCard'><p className='cardText'>E-Commerce</p></div> */}
+                {/* <div className='ServiceCard'><p className='cardText'>E-Commerce</p></div> */}
             </div>
             <div className='ServiceProviders'>
                 <p className='serviceClientHeading'>Our Clients</p>
@@ -35,17 +35,17 @@ const Services = () => {
             </div>
             <div className='ServiceCounts'>
                 <div className='serviceContainer'>
-                    <img src={globe} alt="" />
+                    <img className='imageOne' src={globe} alt="" />
                     <p className='serviceActualCount'>15+</p>
                     <p className='serviceCountries'>Countries</p>
                 </div>
                 <div className='serviceContainer'>
-                    <img src={globe} alt="" />
+                    <img className='imageOne' src={globe} alt="" />
                     <p className='serviceActualCount'>150+</p>
                     <p className='serviceCountries'>Agencies WorldWide</p>
                 </div>
                 <div className='serviceContainer'>
-                    <img src={globe} alt="" />
+                    <img className='imageOne' src={globe} alt="" />
                     <p className='serviceActualCount'>50+</p>
                     <p className='serviceCountries'>Projects</p>
                 </div>
