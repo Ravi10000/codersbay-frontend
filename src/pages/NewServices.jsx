@@ -1,35 +1,30 @@
-import React from 'react'
-import MainUI from '../components/MainUI/MainUI'
-import CoderBay from '../components/MainUI/coderbay.png';
-import searchBar from '../components/MainUI/searchBar.png';
-import Register from '../components/RegisterImg/Register'
-import Navbar from '../components/Navbar/Navbar'
-import BlackLogo from './BlackLogo.png';
-import './Styles.css'
+import React from "react";
+import MainUI from "../components/MainUI/MainUI";
+import CoderBay from "../components/MainUI/coderbay.png";
+import searchBar from "../components/MainUI/searchBar.png";
+import Register from "../components/RegisterImg/Register";
+import Navbar from "../components/Navbar/Navbar";
+import BlackLogo from "./BlackLogo.png";
+import "./Styles.css";
 const NewServices = () => {
-    return (
-        <div>
-            <div className='mainUITwo'>
-                <div className='mainHeader diflex whitebg '>
-                    <div className='firstMainH'>
-                        <img src={BlackLogo} alt='logo' />
-                        {/* <select className='blackcolor select' name="cars" id="cars">
-                            <option className='blackcolor' value="volvo">Services</option>
-                            <option className='blackcolor' value="saab">Services</option>
-                            <option className='blackcolor' value="opel">Services</option>
-                            <option className='blackcolor' value="audi">Services</option>
-                        </select> */}
-                        {/* <a className='mainUIaboutus blackcolor'>About Us</a> */}
-                    </div>
-                    <div className='secondMainH'>
-                        <button className='getButtonTwo '><p className='getText colorTe'>get a quote</p></button>
-                    </div>
-                </div>
-                <Register />
-                <Navbar />
-            </div>
-        </div>
-    )
-}
+  return (
+    <div>
+      <div className="mainUITwo">
+        {/* <div className="mainHeader diflex whitebg ">
+          <div className="firstMainH">
+            <img src={BlackLogo} alt="logo" />
+          </div>
+          <div className="secondMainH">
+            <button className="getButtonTwo ">
+              <p className="getText colorTe">get a quote</p>
+            </button>
+          </div>
+        </div> */}
+        <Register />
+        <Navbar />
+      </div>
+    </div>
+  );
+};
 
-export default NewServices
+export default NewServices;

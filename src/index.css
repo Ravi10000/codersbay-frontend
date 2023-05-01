@@ -13,3 +13,7 @@ input,
 textarea {
   font-family: "Montserrat Alternates", sans-serif;
 }
+
+a{
+  text-decoration: none;
+}
