@@ -1,0 +1,77 @@
+.registerSection {
+  .formTitle {
+    margin-top: 25px;
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+    color: #1a232f;
+    text-align: center;
+  }
+  .mainContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .heroSection {
+      display: none;
+    }
+    .registerForm {
+      max-width: 500px;
+      padding: 15px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      .nameInputs {
+        display: grid;
+        gap: 10px;
+        grid-template-columns: repeat(2, 1fr);
+      }
+      .submitBtn {
+        font-weight: 600;
+        font-size: 1.2rem;
+        border: none;
+        border-radius: 50px;
+        background: var(--mainBrandClr);
+        width: 100%;
+        padding: 12px 32px;
+      }
+    }
+  }
+}
+
+@media (min-width: 1000px) {
+  .registerSection {
+    .formTitle {
+      display: none;
+    }
+    .mainContainer {
+      max-width: 1000px;
+      display: flex;
+      width: 100%;
+      justify-content: space-between;
+      gap: 20px;
+      .heroSection {
+        flex-grow: 1;
+        border-radius: 0 25px 25px 0;
+        padding: 25px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-image: url("/register-form-hero.png");
+        height: 500px;
+      }
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  .registerSection {
+    display: flex;
+    justify-content: center;
+    .mainContainer {
+      .heroSection {
+        border-radius: 25px;
+      }
+    }
+  }
+}

@@ -1,0 +1,35 @@
+.long-text-input {
+  display: grid;
+  gap: 5px;
+  width: 100%;
+  text-align: left;
+  color: #a2a5b5;
+  .label {
+    margin-left: 10px;
+    color: #1a232f;
+    font-size: 12px;
+    font-weight: 600;
+  }
+  .text-input {
+    resize: none;
+    height: 100px;
+    padding: 15px 20px;
+    border: none;
+    color: #1a232f;
+    border-radius: 15px;
+    background: #fff;
+    border: 1px solid #e1e5e8;
+    box-shadow: 4px 4px 64px rgba(0, 0, 0, 0.04);
+    &:focus {
+      outline: 1px solid var(--mainBrandClr);
+    }
+  }
+  .textarea-msg {
+    font-weight: 300;
+    letter-spacing: 1.5px;
+    color: #ced0d6;
+    font-size: 0.8rem;
+    padding-left: 5px;
+    margin: 0;
+  }
+}
