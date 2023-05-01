@@ -18,10 +18,7 @@ const MainUI = () => {
             Helping businesses transform Digitally
           </h1>
           <p className={styles.subtitle}>
-            Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry. Lorem Ipsum has been the industry's standard dummy text
-            ever since the 1500s, when an unknown printer took a galley of type
-            and scrambled it to make a type specimen book.
+            Connecting businesses with reliable suppliers - our B2B marketplace streamlines procurement and saves you time and money. From sourcing to payment - we provide end-to-end solutions for your business needs.
           </p>
           <form className={styles.searchForm}>
             <input
@@ -35,7 +32,7 @@ const MainUI = () => {
           </form>
         </div>
         <div className={styles.sliderContainer}>
-          <img className={styles.slider} src="/slider.png" alt="" />
+          <img className={styles.slider} src="/side.gif" alt="" />
         </div>
       </div>
       <h2 className={styles.nextSectionTitle}>Our Service Offerings</h2>
