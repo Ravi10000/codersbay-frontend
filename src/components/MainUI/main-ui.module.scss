@@ -1,0 +1,106 @@
+.mainUi {
+  background: var(--mainBrandClr);
+  padding: 25px;
+  .content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+    .heading {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      max-width: 500px;
+      .title {
+        font-weight: 600;
+      }
+      .subtitle {
+        font-weight: 500;
+        margin-bottom: 50px;
+      }
+    }
+    .searchForm {
+      display: flex;
+      background: rgba(255, 255, 255, 0.16);
+      border: 2px solid #6a689c;
+      display: flex;
+      padding: 10px 10px 10px 20px;
+      border-radius: 50px;
+      .searchBar {
+        color: #fff;
+        flex-grow: 1;
+        background: transparent;
+        border: none;
+        &:focus {
+          outline: none;
+        }
+        &::placeholder {
+          color: #fff;
+        }
+      }
+      .searchIconContainer {
+        height: 30px;
+        width: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50px;
+        background: #fff;
+        .searchIcon {
+          width: 15px;
+          height: fit-content;
+        }
+      }
+    }
+    .sliderContainer {
+      display: none;
+    }
+  }
+  .nextSectionTitle {
+    margin-top: 70px;
+    font-size: 2.4rem;
+    text-align: center;
+    font-family: "Urbanist", sans-serif;
+  }
+}
+
+@media (min-width: 1000px) {
+  .mainUi {
+    .content {
+      gap: 50px;
+      padding: 0 80px;
+      margin-bottom: 100px;
+      justify-content: space-between;
+      .heading {
+        .title {
+          font-size: 3rem;
+        }
+        .subtitle {
+          margin-bottom: 20px;
+        }
+      }
+      .sliderContainer {
+        display: block;
+        .slider {
+          max-width: 400px;
+          height: fit-content;
+        }
+      }
+    }
+    .nextSectionTitle {
+      font-size: 3.5rem;
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  .mainUi {
+    .content {
+      gap: 200px;
+      justify-content: center;
+      .nextSectionTitle {
+        font-size: 72px;
+      }
+    }
+  }
+}

@@ -1,0 +1,12 @@
+:root {
+  --mainBrandClr: #2c2573;
+}
+
+body {
+  font-family: "Montserrat Alternates", sans-serif;
+}
+
+button,
+input {
+  font-family: "Montserrat Alternates", sans-serif;
+}
