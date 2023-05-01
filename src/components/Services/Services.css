@@ -1,163 +1,156 @@
 .Services {
-    /* width: 100%; */
-    height: 100vh;
-    background-color: white;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
+  /* width: 100%; */
+  height: 100vh;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
 }
 
-.ServiceCards {
-    align-self: center;
-    width: 95vw;
-    /* background-color: ; */
+/* .ServiceCards {
+  align-self: center;
+  width: 95vw;
 
-
-    height: 40vh;
-    /* background-color: lightblue; */
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-}
+  height: 40vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+} */
 
 .ServiceCard {
-    background-image: url('./dubai-city.webp');
-    /* filter: blur(1px); */
-    /* -webkit-filter: blur(8px); */
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 10vw;
-    height: 40vh;
-    background-color: lightcoral;
+  background-image: url("./dubai-city.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 10vw;
+  height: 40vh;
+  background-color: lightcoral;
 }
 
 .ServiceProviders {
-    align-self: center;
-    width: 95vw;
-    height: 25vh;
-    /* background-color: lightblue; */
+  align-self: center;
+  width: 95vw;
+  height: 25vh;
 }
 
 .ServiceCounts {
-    align-self: center;
-    width: 95vw;
-    height: 20vh;
-    /* background-color: lightblue; */
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+  align-self: center;
+  width: 95vw;
+  height: 20vh;
+  /* background-color: lightblue; */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
 }
 
 .cardText {
-    /* position: relative; */
-    width: 204px;
-    height: 32px;
-    /* left: calc(50% - 204px/2 + 86px);
+  /* position: relative; */
+  width: 204px;
+  height: 32px;
+  /* left: calc(50% - 204px/2 + 86px);
     top: calc(50% - 32px/2 + 154px); */
-    position: relative;
-    top: 15vh;
-    right: 2.5vw;
-    font-family: 'Urbanist';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 32px;
-    line-height: 100%;
-    color: #FFFFFF;
-    transform: rotate(-90deg);
+  position: relative;
+  top: 15vh;
+  right: 2.5vw;
+  font-family: "Urbanist";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 100%;
+  color: #ffffff;
+  transform: rotate(-90deg);
 }
 
 .serviceClientHeading {
-    font-family: 'Montserrat Alternates';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 32px;
-    line-height: 100%;
-    color: #1A232F;
-    text-align: center;
+  font-family: "Montserrat Alternates";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 100%;
+  color: #1a232f;
+  text-align: center;
 }
 
 .serviceCompanies {
-    width: 60vw;
-    height: 20vh;
-    /* background-color: lightcoral; */
-    margin: auto;
+  width: 60vw;
+  height: 20vh;
+  /* background-color: lightcoral; */
+  margin: auto;
 }
 
 .serviceCardMargin {
-    margin: 25px;
-    padding-top: 20px;
+  margin: 25px;
+  padding-top: 20px;
 }
 
 .serviceContainer {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 16px 72px;
-    gap: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 16px 72px;
+  gap: 8px;
 
-    width: 25vw;
-    height: 20vh;
+  width: 25vw;
+  height: 20vh;
 
-    /* Gray/Gray 09 */
+  /* Gray/Gray 09 */
 
-    background: #d9dee4;
-    border-radius: 16px;
-
+  background: #d9dee4;
+  border-radius: 16px;
 }
 
 .serviceActualCount {
-    font-family: 'Montserrat Alternates';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 32px;
-    line-height: 100%;
-    /* identical to box height, or 32px */
+  font-family: "Montserrat Alternates";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 100%;
+  /* identical to box height, or 32px */
 
-    text-align: center;
+  text-align: center;
 
-    /* Gray/Gray 01 */
+  /* Gray/Gray 01 */
 
-    color: #1A232F;
+  color: #1a232f;
 }
 
 .serviceCountries {
-    font-family: 'Montserrat Alternates';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 100%;
-    /* identical to box height, or 16px */
+  font-family: "Montserrat Alternates";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 100%;
+  /* identical to box height, or 16px */
 
-    text-align: center;
+  text-align: center;
 
-    /* Gray/Gray 01 */
+  /* Gray/Gray 01 */
 
-    color: #1A232F;
+  color: #1a232f;
 }
 
 @media only screen and (max-width: 1000px) {
-    .serviceContainer {
-        /* width: 50px !important; */
-        /* background-color: rebeccapurple; */
-        /* max-width: 50px ; */
-        width: 2vw;
-        height: 10vh;
-        /* padding-top: -50px; */
-        padding-top: 7px;
-    }
+  .serviceContainer {
+    /* width: 50px !important; */
+    /* background-color: rebeccapurple; */
+    /* max-width: 50px ; */
+    width: 2vw;
+    height: 10vh;
+    /* padding-top: -50px; */
+    padding-top: 7px;
+  }
 
-    .imageOne {
-        width: 5vw;
-        height: 5vh;
-    }
+  .imageOne {
+    width: 5vw;
+    height: 5vh;
+  }
 
-    .serviceActualCount {
-        font-size: 1.5vh;
-    }
+  .serviceActualCount {
+    font-size: 1.5vh;
+  }
 
-    .serviceCountries {
-        /* display: none; */
-        font-size: 1.2vh;
-        margin-top: -5px;
-    }
+  .serviceCountries {
+    /* display: none; */
+    font-size: 1.2vh;
+    margin-top: -5px;
+  }
 }

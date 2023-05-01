@@ -1,0 +1,40 @@
+.topServices {
+  p,
+  h2 {
+    color: var(--mainBrandClr);
+  }
+  .title {
+    font-size: 2.4rem;
+    text-align: center;
+    padding: 20px;
+  }
+  .servicesContainer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    padding: 20px;
+    .serviceName {
+      background: #fff;
+      border-radius: 10px;
+      font-weight: 600;
+      padding: 15px;
+      border: 1px solid #e1e5e8;
+    }
+  }
+}
+
+@media (min-width: 1000px) {
+  .topServices {
+    .servicesContainer {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+}
+@media (min-width: 1200px) {
+  .topServices {
+    padding: 20px 80px;
+    .servicesContainer {
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
+}

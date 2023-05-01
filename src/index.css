@@ -1,5 +1,7 @@
 :root {
   --mainBrandClr: #2c2573;
+  --primaryFont: "Montserrat Alternates";
+  --secondaryFont: "Urbanist";
 }
 
 body {

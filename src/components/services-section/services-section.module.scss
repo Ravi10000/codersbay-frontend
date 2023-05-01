@@ -1,0 +1,118 @@
+.services {
+  .servicesContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 50px 25px;
+    .card {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      padding: 20px;
+      background-image: url("/service-card-bg.png");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      transition: all 0.3s ease-in-out;
+
+      &:hover {
+        .hoverContent {
+          display: flex;
+        }
+      }
+      .cardTitle {
+        font-size: 2rem;
+        font-weight: 600;
+        font-family: var(--secondaryFont), sans-serif;
+        transition: all 0.2s ease-in-out;
+      }
+      .hoverContent {
+        display: none;
+        // display: flex;
+        gap: 10px;
+        flex-wrap: wrap;
+        button {
+          padding: 12px 32px;
+          color: #fff;
+          border: 2px solid #fff;
+          border-radius: 50px;
+          background: rgba(255, 255, 255, 0.16);
+        }
+      }
+    }
+  }
+  .clients {
+    align-self: center;
+    width: 95vw;
+    height: 25vh;
+    .title {
+      color: var(--mainBrandClr);
+      text-align: center;
+      font-size: 1.5rem;
+    }
+  }
+  .statistics {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    padding: 20px;
+    .card {
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+      align-items: center;
+      width: 100%;
+      padding: 10px 20px;
+      border-radius: 15px;
+      background: #eceff3;
+      max-width: 500px;
+      img {
+        width: 30px;
+        height: fit-content;
+      }
+      p {
+        color: var(--mainBrandClr);
+      }
+      .count {
+        font-size: 1.5rem;
+        font-weight: 600;
+      }
+    }
+  }
+}
+
+@media (min-width: 800px) {
+  .services {
+    .servicesContainer {
+      flex-direction: row;
+      flex-wrap: wrap;
+      .card {
+        width: 100px;
+        flex-grow: 1;
+
+        &:hover {
+          width: 300px;
+          .cardTitle {
+            align-self: flex-start;
+            writing-mode: unset;
+          }
+        }
+        .cardTitle {
+          writing-mode: vertical-lr;
+          text-orientation: mixed;
+        }
+      }
+    }
+    .statistics {
+      flex-direction: row;
+      justify-content: center;
+      .card {
+        max-width: 300px;
+      }
+    }
+  }
+}
