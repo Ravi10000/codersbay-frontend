@@ -5,6 +5,16 @@ import ServiceItem from "./service-item/service-item";
 function ServicesPage() {
   return (
     <div className={styles.servicesPage}>
+      <div className={styles.pageNavigationDetails}>
+        <h1>E-Commerce</h1>
+        <div className={styles.navStatus}>
+          <p>Home</p>
+          <img src="/arrow.png" alt="" />
+          <p>Services</p>
+          <img src="/arrow.png" alt="" />
+          <p>E-Commerce</p>
+        </div>
+      </div>
       <h2 className={styles.title}>What We Offer</h2>
       <div className={styles.servicesContainer}>
         <img className={styles.vectorLine} src="/vector-line.svg" alt="" />

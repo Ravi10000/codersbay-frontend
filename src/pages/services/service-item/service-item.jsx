@@ -18,23 +18,7 @@ function ServiceItem({ name, children }) {
   }, [serviceItemRef]);
   return (
     <>
-      {showDesc && (
-        <div className={styles.servicesItem}>
-          {/* <div className={styles.serviceName}>
-            <p>{name}</p>
-            {showDesc && (
-              <img
-                src="/close.png"
-                alt=""
-                onClick={(e) => {
-                  e.stopPropagation();
-                  setShowDesc(false);
-                }}
-              />
-            )}
-          </div> */}
-        </div>
-      )}
+      {showDesc && <div className={styles.servicesItem}></div>}
       <div
         ref={serviceItemRef}
         onClick={() => setShowDesc(true)}

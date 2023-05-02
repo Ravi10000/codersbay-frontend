@@ -1,11 +1,31 @@
 .title {
-  color: var(--mainBrandClr);
+  color: var(--darkClr);
   text-align: center;
-  font-size: 2.5rem;
+  font-size: 3.5rem;
   font-weight: 600;
   margin: 30px 0;
 }
 .servicesPage {
+  .pageNavigationDetails {
+    padding: 20px;
+    background: #f2f2f7;
+    h1 {
+      font-weight: 500;
+      color: var(--darkClr);
+    }
+    .navStatus {
+      display: flex;
+      gap: 15px;
+      align-items: center;
+      img {
+        height: 12px;
+        width: fit-content;
+      }
+      p {
+        color: var(--darkClr);
+      }
+    }
+  }
   .servicesContainer {
     position: relative;
     // overflow: hidden;
@@ -13,6 +33,7 @@
       position: absolute;
       width: 100%;
       top: -50%;
+      transform: rotate(12deg);
     }
     .content {
       .servicesList {
@@ -58,12 +79,18 @@
 
 @media (min-width: 600px) {
   .servicesPage {
+    .pageNavigationDetails {
+      padding: 30px 80px;
+    }
+    .title {
+      text-align: left;
+      margin-left: 80px;
+    }
     .servicesContainer {
       display: flex;
       justify-content: center;
       .content {
         display: flex;
-        // align-items: center;
         gap: 10px;
         .heroContainer {
           margin-top: 50px;
