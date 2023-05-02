@@ -6,6 +6,7 @@
     padding: 50px 25px;
     .card {
       width: 100%;
+      height: 450px;
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -16,14 +17,15 @@
       background-repeat: no-repeat;
       background-position: center;
       background-size: cover;
-      // transition: all 0.3s ease-in-out;
-
+      transition: all 0.2s ease-in-out;
       &:hover {
         .hoverContent {
           display: flex;
+          animation: animateHoverContent 0.2s ease-in-out forwards;
         }
       }
       .cardTitle {
+        // width: fit-content;
         font-size: 2rem;
         font-weight: 600;
         font-family: var(--secondaryFont), sans-serif;
@@ -31,9 +33,9 @@
       }
       .hoverContent {
         display: none;
-        // display: flex;
         gap: 10px;
         flex-wrap: wrap;
+        transition: all 0.2s ease-in-out;
         button {
           cursor: pointer;
           padding: 12px 32px;
@@ -99,12 +101,15 @@
           width: 300px;
           .cardTitle {
             align-self: flex-start;
-            writing-mode: unset;
+            animation: animateCardTitle 0.2s ease-in-out forwards;
+            // transform: rotate(0deg);
+            // writing-mode: unset;
           }
         }
         .cardTitle {
-          writing-mode: vertical-lr;
-          text-orientation: mixed;
+          transform: rotate(-90deg);
+          // writing-mode: vertical-lr;
+          // text-orientation: mixed;
         }
       }
     }
@@ -115,5 +120,31 @@
         max-width: 300px;
       }
     }
+  }
+}
+
+@keyframes animateCardTitle {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-20px) rotate(0deg);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0) rotate(0deg);
+    opacity: 1;
+  }
+}
+@keyframes animateHoverContent {
+  0% {
+    opacity: 0;
+  }
+  80% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
   }
 }
