@@ -1,19 +1,20 @@
 :root {
   --mainBrandClr: #2c2573;
-  --primaryFont: "Montserrat Alternates";
-  --secondaryFont: "Urbanist";
+  --darkClr: #1a232f;
 }
 
 body {
-  font-family: "Montserrat Alternates", sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 button,
 input,
-textarea {
-  font-family: "Montserrat Alternates", sans-serif;
+textarea,
+ul,
+li {
+  font-family: "Poppins", sans-serif;
 }
 
-a{
+a {
   text-decoration: none;
 }

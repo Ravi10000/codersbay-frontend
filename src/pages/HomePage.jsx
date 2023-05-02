@@ -4,19 +4,20 @@ import Services from "../components/Services/Services";
 import TopServices from "../components/TopServices/TopServices";
 import Register from "../components/RegisterImg/Register";
 import AboutUs from "../components/AboutUs/AboutUs";
-import Navbar from "../components/Navbar/Navbar";
+import Footer from "../components/Navbar/Navbar";
 import ServicesSection from "../components/services-section/services-section";
+import ProcessSection from "../components/process-section/process-section";
 
 const HomePage = () => {
   return (
     <div>
       <MainUI />
       <ServicesSection />
-      {/* <Services /> */}
+      <ProcessSection />
       <TopServices />
       <Register />
-      {/* <AboutUs /> */}
-      {/* <Navbar /> */}
+      <AboutUs />
+      <Footer />
     </div>
   );
 };

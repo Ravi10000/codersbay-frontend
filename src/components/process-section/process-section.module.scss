@@ -1,0 +1,81 @@
+.process {
+  color: #000;
+  background: var(--mainBrandClr);
+  padding: 50px 0;
+  .sectionHead {
+    padding: 20px;
+    text-align: center;
+    h2 {
+      font-size: 2.5rem;
+      font-weight: 500;
+    }
+  }
+  .content {
+    padding: 50px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    .processItem {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+      text-align: center;
+      h4 {
+        font-weight: 500;
+      }
+      p {
+        font-weight: 300;
+      }
+      hr {
+        display: none;
+      }
+      // &:nth-child(2n) {
+      //   text-align: right;
+      //   flex-direction: row-reverse;
+      // }
+      img {
+        width: 70px;
+        height: fit-content;
+      }
+    }
+  }
+}
+
+@media (min-width: 800px) {
+  .process {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .content {
+      width: calc(1000px - 32px);
+      .processItem {
+        width: 500px;
+        flex-direction: row-reverse;
+        text-align: end;
+
+        &:nth-child(2n) {
+          text-align: start;
+          flex-direction: row;
+          align-self: flex-end;
+        }
+        .imgContainer {
+          position: relative;
+          img {
+            position: relative;
+            z-index: 1;
+          }
+          .line {
+            display: block;
+            position: absolute;
+            transform: translateX(-50%) rotate(90deg);
+            bottom: 0;
+            left: 50%;
+            width: 100px;
+            border: 1px dashed #fff;
+          }
+        }
+      }
+    }
+  }
+}

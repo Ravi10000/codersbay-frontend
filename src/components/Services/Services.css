@@ -71,7 +71,8 @@
 }
 
 .serviceCompanies {
-  width: 60vw;
+  /* width: 60vw; */
+  padding: 20px 80px;
   height: 20vh;
   /* background-color: lightcoral; */
   margin: auto;
