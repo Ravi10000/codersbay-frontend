@@ -1,0 +1,51 @@
+.about {
+  position: relative;
+  .content {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background: #2c2573ea;
+    padding: 50px 20px;
+    p.subtitle {
+      font-size: 1.2rem;
+      font-weight: 300;
+    }
+    p {
+      font-weight: 200;
+      font-size: 0.9rem;
+    }
+    h2 {
+      font-size: 3rem;
+      font-weight: 500;
+    }
+  }
+  video {
+    display: none;
+  }
+}
+
+@media (min-width: 600px) {
+  .about {
+    display: flex;
+    align-items: center;
+    .content {
+      position: absolute;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+      width: 100%;
+      p {
+        font-size: 1.2rem;
+        max-width: 600px;
+        &.subtitle {
+          font-size: 1.5rem;
+        }
+      }
+    }
+    video {
+      display: block;
+      width: 100%;
+    }
+  }
+}
