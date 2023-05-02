@@ -1,5 +1,5 @@
 import React from "react";
-import "./Navbar.css";
+import "./footer.css";
 import live from "./live.png";
 import mail from "./mail.png";
 import Phone from "./phone.png";

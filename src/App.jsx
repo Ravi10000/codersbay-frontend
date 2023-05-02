@@ -1,16 +1,11 @@
-import { useState } from "react";
 import "./App.css";
 import Header from "./components/header/Header";
-import MainUI from "./components/MainUI/MainUI";
-import Services from "./components/Services/Services";
-import TopServices from "./components/TopServices/TopServices";
-import Register from "./components/RegisterImg/Register";
-import Navbar from "./components/Navbar/Navbar";
 import { Routes, Route } from "react-router-dom";
 import HomePage from "./pages/HomePage";
-import NewServices from "./pages/NewServices";
 import Payment from "./pages/Payment";
 import ScrollToTop from "./components/scrollToTop";
+import Footer from "./components/footer/footer";
+import ServicesPage from "./pages/services/services.page";
 
 function App() {
   return (
@@ -19,9 +14,10 @@ function App() {
       <Header />
       <Routes>
         <Route path="/" element={<HomePage />} />
-        <Route path="/services" element={<NewServices />} />
+        <Route path="/services" element={<ServicesPage />} />
         <Route path="/payment" element={<Payment />} />
       </Routes>
+      <Footer />
     </>
   );
 }

@@ -1,0 +1,32 @@
+.serviceItem {
+  border: 1px solid #e1e5e8;
+  border-radius: 10px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  background: #fff;
+  width: 300px;
+  &.showDescription {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    // width: calc(100% - 40px);
+    // top: 20px;
+    // left: 20px;
+  }
+  p {
+    color: var(--darkClr);
+  }
+  .serviceName {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-weight: 600;
+    cursor: pointer;
+    img {
+      width: fit-content;
+      height: 25px;
+    }
+  }
+}

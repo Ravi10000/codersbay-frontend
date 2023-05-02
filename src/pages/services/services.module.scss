@@ -1,0 +1,106 @@
+.title {
+  color: var(--mainBrandClr);
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: 600;
+  margin: 30px 0;
+}
+.servicesPage {
+  .servicesContainer {
+    position: relative;
+    // overflow: hidden;
+    .vectorLine {
+      position: absolute;
+      width: 100%;
+      top: -50%;
+    }
+    .content {
+      .servicesList {
+        position: relative;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        gap: 20px;
+        padding: 20px;
+        .serviceName {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          border-radius: 10px;
+          font-weight: 600;
+          padding: 15px;
+          border: 1px solid #e1e5e8;
+          img {
+            width: fit-content;
+            height: 25px;
+          }
+          p {
+            color: var(--darkClr);
+          }
+        }
+      }
+      .heroContainer {
+        display: none;
+      }
+    }
+  }
+  .tech {
+    align-self: center;
+    .techContainer {
+      padding: 0 20px;
+      margin: auto;
+      .image {
+        margin: 50px;
+      }
+    }
+  }
+}
+
+@media (min-width: 600px) {
+  .servicesPage {
+    .servicesContainer {
+      display: flex;
+      justify-content: center;
+      .content {
+        display: flex;
+        // align-items: center;
+        gap: 10px;
+        .heroContainer {
+          margin-top: 50px;
+          display: block;
+          img {
+            width: 400px;
+            height: fit-content;
+          }
+        }
+      }
+    }
+    .tech {
+      .techContainer {
+        padding: 20px 80px;
+      }
+    }
+  }
+}
+@media (min-width: 1200px) {
+  .servicesPage {
+    .servicesContainer {
+      .content {
+        .servicesList {
+          display: grid;
+          grid-template-columns: repeat(2, 1fr);
+        }
+        .heroContainer {
+          img {
+            width: 450px;
+          }
+        }
+      }
+    }
+    .tech {
+      .techContainer {
+        padding: 20px 80px;
+      }
+    }
+  }
+}

@@ -50,7 +50,11 @@
     align-self: center;
     .clientsContainer {
       padding: 0 20px;
+      display: flex;
       margin: auto;
+      .image {
+        margin: 50px;
+      }
     }
     .title {
       color: var(--mainBrandClr);

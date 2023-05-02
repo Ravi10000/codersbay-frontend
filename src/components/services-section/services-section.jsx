@@ -137,10 +137,10 @@ function ServicesSection() {
         {/* <div className="serviceCompanies"> */}
         <div className={styles.clientsContainer}>
           <Marquee autoFill={true} speed={50}>
-            <img className="serviceCardMargin" src={"/byjus.png"} alt="" />
-            <img className="serviceCardMargin" src={"/genpact.png"} alt="" />
-            <img className="serviceCardMargin" src={"/KandK.png"} alt="" />
-            <img className="serviceCardMargin" src={"/pega.png"} alt="" />
+            <img className={styles.image} src={"/byjus.png"} alt="" />
+            <img className={styles.image} src={"/genpact.png"} alt="" />
+            <img className={styles.image} src={"/KandK.png"} alt="" />
+            <img className={styles.image} src={"/pega.png"} alt="" />
           </Marquee>
         </div>
       </div>
