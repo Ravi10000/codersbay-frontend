@@ -23,9 +23,11 @@ const Payment = () => {
                         </select> */}
                         {/* <a className='mainUIaboutus blackcolor'>About Us</a> */}
                     </div>
+                    <Link to="/services">
                     <div className='secondMainH'>
                         <button className='getButtonTwo '><p className='getText colorTe'>get a quote</p></button>
                     </div>
+                    </Link>
                 </div>
                 {/* <Register /> */}
                 <QRCode />

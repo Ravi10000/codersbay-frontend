@@ -7,7 +7,9 @@ const Header = () => {
       <Link to="/">
         <img src="/Logo White.png" alt="" className={styles.logo} />
       </Link>
+      <Link to="/services">
       <button className={styles.callToAction}>Get A Quote</button>
+      </Link>
     </header>
   );
 };
