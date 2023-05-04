@@ -7,10 +7,11 @@ import ScrollToTop from "./components/scrollToTop";
 import Footer from "./components/footer/footer";
 import ServicesPage from "./pages/services/services.page";
 import PaymentPage from "./pages/payment/payment";
+import AdminPage from "./pages/admin/admin.page";
 
 function App() {
   return (
-    <>
+    <div className="App">
       <ScrollToTop />
       <Header />
       <Routes>
@@ -21,9 +22,10 @@ function App() {
           element={<Navigate to="/services/E-Commerce" />}
         />
         <Route path="/payment" element={<PaymentPage />} />
+        <Route path="/admin" element={<AdminPage />} />
       </Routes>
       <Footer />
-    </>
+    </div>
   );
 }
 

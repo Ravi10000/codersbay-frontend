@@ -11,6 +11,19 @@ function ServicesPage() {
   async function handleFetchSkus() {
     const { data } = await fetchSkuByServiceName(serviceName);
     console.log(data);
+    if (data?.skus?.length === 0) {
+      return setSkus(
+        Array(12)
+          .fill()
+          .map(() => ({
+            _id: Math.random(),
+            name: "test",
+            description:
+              "this is a test description of test sku. this is a test description of test sku.",
+            serviceName,
+          }))
+      );
+    }
     setSkus(data?.skus);
   }
 
