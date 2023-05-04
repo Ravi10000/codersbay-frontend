@@ -1,0 +1,53 @@
+.paymentPage {
+  .content {
+    padding: 50px 20px;
+    display: grid;
+    place-items: center;
+    gap: 25px;
+    h2 {
+      font-weight: 600;
+      text-align: center;
+      margin-bottom: 25px;
+    }
+    .qr {
+      width: 300px;
+      height: fit-content;
+    }
+    .detailsContainer {
+      display: grid;
+      width: 100%;
+      max-width: 500px;
+      .details {
+        P {
+          color: #7a8796;
+          &:last-child {
+            color: #1a232f;
+          }
+        }
+        .data {
+          display: flex;
+          gap: 50px;
+          justify-content: space-between;
+        }
+      }
+    }
+  }
+  p,
+  h2 {
+    color: var(--darkClr);
+  }
+  .inputContainer {
+    width: 100%;
+    min-width: 300px;
+    max-width: 500px;
+  }
+  .submitBtn {
+    padding: 12px 50px;
+    border-radius: 50px;
+    border: none;
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+    background: var(--mainBrandClr);
+  }
+}

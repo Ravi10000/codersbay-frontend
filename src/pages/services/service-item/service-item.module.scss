@@ -4,19 +4,24 @@
   padding: 10px;
   display: flex;
   flex-direction: column;
-  gap: 10px;
   background: #fff;
   width: 300px;
   &.showDescription {
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    // width: calc(100% - 40px);
-    // top: 20px;
-    // left: 20px;
+    .desc {
+      grid-template-rows: 1fr;
+    }
   }
   p {
     color: var(--darkClr);
+  }
+  .desc {
+    display: grid;
+    grid-template-rows: 0fr;
+    transition: grid-template-rows 0.3s ease-in-out;
+    p {
+      overflow: hidden;
+      padding: 0;
+    }
   }
   .serviceName {
     display: flex;

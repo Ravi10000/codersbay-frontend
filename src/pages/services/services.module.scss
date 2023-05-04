@@ -6,6 +6,10 @@
   margin: 30px 0;
 }
 .servicesPage {
+  overflow-x: hidden;
+  h1 {
+    text-transform: capitalize;
+  }
   .pageNavigationDetails {
     padding: 20px;
     background: #f2f2f7;
@@ -30,6 +34,7 @@
     position: relative;
     // overflow: hidden;
     .vectorLine {
+      z-index: -1;
       position: absolute;
       width: 100%;
       top: -50%;

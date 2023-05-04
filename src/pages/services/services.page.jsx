@@ -2,17 +2,33 @@ import styles from "./services.module.scss";
 import Register from "../../components/RegisterImg/Register";
 import Marquee from "react-fast-marquee";
 import ServiceItem from "./service-item/service-item";
+import { useParams, Link } from "react-router-dom";
+import { useEffect, useState } from "react";
+import { fetchSkuByServiceName } from "../../api/sku.res";
 function ServicesPage() {
+  const { serviceName } = useParams();
+  const [skus, setSkus] = useState([]);
+  async function handleFetchSkus() {
+    const { data } = await fetchSkuByServiceName(serviceName);
+    console.log(data);
+    setSkus(data?.skus);
+  }
+
+  useEffect(() => {
+    handleFetchSkus();
+  }, []);
   return (
     <div className={styles.servicesPage}>
       <div className={styles.pageNavigationDetails}>
-        <h1>E-Commerce</h1>
+        <h1 className="__cap">{serviceName}</h1>
         <div className={styles.navStatus}>
-          <p>Home</p>
+          <Link to="/">
+            <p className="__link">Home</p>
+          </Link>
           <img src="/arrow.png" alt="" />
           <p>Services</p>
           <img src="/arrow.png" alt="" />
-          <p>E-Commerce</p>
+          <p className="__cap">{serviceName}</p>
         </div>
       </div>
       <h2 className={styles.title}>What We Offer</h2>
@@ -20,186 +36,9 @@ function ServicesPage() {
         <img className={styles.vectorLine} src="/vector-line.svg" alt="" />
         <div className={styles.content}>
           <div className={styles.servicesList}>
-            <ServiceItem name="Youtube Marketing">
-              <p>
-                You are keen on selling your products/services online? You want
-                to develop an e-commerce website to list products and services?
-                You want to redesign and rework your existing e-commerce
-                website? You want a managed experience in building your
-                e-commerce website? You are exhausted with the tedious process
-                of looking for a website developer for your website? You are
-                looking for a one-stop solution for the development, maintenance
-                and marketing needs of your single-vendor or multi-vendor
-                e-commerce website? If yes, this page is designed just for users
-                like you looking for multi-vendor e-commerce website development
-                solutions.
-              </p>
-            </ServiceItem>
-            <ServiceItem name="E-Learning">
-              <p>
-                You are keen on selling your products/services online? You want
-                to develop an e-commerce website to list products and services?
-                You want to redesign and rework your existing e-commerce
-                website? You want a managed experience in building your
-                e-commerce website? You are exhausted with the tedious process
-                of looking for a website developer for your website? You are
-                looking for a one-stop solution for the development, maintenance
-                and marketing needs of your single-vendor or multi-vendor
-                e-commerce website? If yes, this page is designed just for users
-                like you looking for multi-vendor e-commerce website development
-                solutions.
-              </p>
-            </ServiceItem>
-            <ServiceItem name="SEO">
-              <p>
-                You are keen on selling your products/services online? You want
-                to develop an e-commerce website to list products and services?
-                You want to redesign and rework your existing e-commerce
-                website? You want a managed experience in building your
-                e-commerce website? You are exhausted with the tedious process
-                of looking for a website developer for your website? You are
-                looking for a one-stop solution for the development, maintenance
-                and marketing needs of your single-vendor or multi-vendor
-                e-commerce website? If yes, this page is designed just for users
-                like you looking for multi-vendor e-commerce website development
-                solutions.
-              </p>
-            </ServiceItem>
-            <ServiceItem name="Learning Management System">
-              <p>
-                You are keen on selling your products/services online? You want
-                to develop an e-commerce website to list products and services?
-                You want to redesign and rework your existing e-commerce
-                website? You want a managed experience in building your
-                e-commerce website? You are exhausted with the tedious process
-                of looking for a website developer for your website? You are
-                looking for a one-stop solution for the development, maintenance
-                and marketing needs of your single-vendor or multi-vendor
-                e-commerce website? If yes, this page is designed just for users
-                like you looking for multi-vendor e-commerce website development
-                solutions.
-              </p>
-            </ServiceItem>
-            <ServiceItem name="Test/Quiz Platform">
-              <p>
-                You are keen on selling your products/services online? You want
-                to develop an e-commerce website to list products and services?
-                You want to redesign and rework your existing e-commerce
-                website? You want a managed experience in building your
-                e-commerce website? You are exhausted with the tedious process
-                of looking for a website developer for your website? You are
-                looking for a one-stop solution for the development, maintenance
-                and marketing needs of your single-vendor or multi-vendor
-                e-commerce website? If yes, this page is designed just for users
-                like you looking for multi-vendor e-commerce website development
-                solutions.
-              </p>
-            </ServiceItem>
-            <ServiceItem name="Board Games">
-              <p>
-                You are keen on selling your products/services online? You want
-                to develop an e-commerce website to list products and services?
-                You want to redesign and rework your existing e-commerce
-                website? You want a managed experience in building your
-                e-commerce website? You are exhausted with the tedious process
-                of looking for a website developer for your website? You are
-                looking for a one-stop solution for the development, maintenance
-                and marketing needs of your single-vendor or multi-vendor
-                e-commerce website? If yes, this page is designed just for users
-                like you looking for multi-vendor e-commerce website development
-                solutions.
-              </p>
-            </ServiceItem>
-            <ServiceItem name="Metaverse Gaming">
-              <p>
-                You are keen on selling your products/services online? You want
-                to develop an e-commerce website to list products and services?
-                You want to redesign and rework your existing e-commerce
-                website? You want a managed experience in building your
-                e-commerce website? You are exhausted with the tedious process
-                of looking for a website developer for your website? You are
-                looking for a one-stop solution for the development, maintenance
-                and marketing needs of your single-vendor or multi-vendor
-                e-commerce website? If yes, this page is designed just for users
-                like you looking for multi-vendor e-commerce website development
-                solutions.
-              </p>
-            </ServiceItem>
-            <ServiceItem name="LinkedIn Marketing">
-              <p>
-                You are keen on selling your products/services online? You want
-                to develop an e-commerce website to list products and services?
-                You want to redesign and rework your existing e-commerce
-                website? You want a managed experience in building your
-                e-commerce website? You are exhausted with the tedious process
-                of looking for a website developer for your website? You are
-                looking for a one-stop solution for the development, maintenance
-                and marketing needs of your single-vendor or multi-vendor
-                e-commerce website? If yes, this page is designed just for users
-                like you looking for multi-vendor e-commerce website development
-                solutions.
-              </p>
-            </ServiceItem>
-            <ServiceItem name="Marketplace Management">
-              <p>
-                You are keen on selling your products/services online? You want
-                to develop an e-commerce website to list products and services?
-                You want to redesign and rework your existing e-commerce
-                website? You want a managed experience in building your
-                e-commerce website? You are exhausted with the tedious process
-                of looking for a website developer for your website? You are
-                looking for a one-stop solution for the development, maintenance
-                and marketing needs of your single-vendor or multi-vendor
-                e-commerce website? If yes, this page is designed just for users
-                like you looking for multi-vendor e-commerce website development
-                solutions.
-              </p>
-            </ServiceItem>
-            <ServiceItem name="Influencer Marketing">
-              <p>
-                You are keen on selling your products/services online? You want
-                to develop an e-commerce website to list products and services?
-                You want to redesign and rework your existing e-commerce
-                website? You want a managed experience in building your
-                e-commerce website? You are exhausted with the tedious process
-                of looking for a website developer for your website? You are
-                looking for a one-stop solution for the development, maintenance
-                and marketing needs of your single-vendor or multi-vendor
-                e-commerce website? If yes, this page is designed just for users
-                like you looking for multi-vendor e-commerce website development
-                solutions.
-              </p>
-            </ServiceItem>
-            <ServiceItem name="Product Videography">
-              <p>
-                You are keen on selling your products/services online? You want
-                to develop an e-commerce website to list products and services?
-                You want to redesign and rework your existing e-commerce
-                website? You want a managed experience in building your
-                e-commerce website? You are exhausted with the tedious process
-                of looking for a website developer for your website? You are
-                looking for a one-stop solution for the development, maintenance
-                and marketing needs of your single-vendor or multi-vendor
-                e-commerce website? If yes, this page is designed just for users
-                like you looking for multi-vendor e-commerce website development
-                solutions.
-              </p>
-            </ServiceItem>
-            <ServiceItem name="Multi-vendor E-commerce website">
-              <p>
-                You are keen on selling your products/services online? You want
-                to develop an e-commerce website to list products and services?
-                You want to redesign and rework your existing e-commerce
-                website? You want a managed experience in building your
-                e-commerce website? You are exhausted with the tedious process
-                of looking for a website developer for your website? You are
-                looking for a one-stop solution for the development, maintenance
-                and marketing needs of your single-vendor or multi-vendor
-                e-commerce website? If yes, this page is designed just for users
-                like you looking for multi-vendor e-commerce website development
-                solutions.
-              </p>
-            </ServiceItem>
+            {skus?.map((sku) => (
+              <ServiceItem sku={sku} key={sku?._id} />
+            ))}
           </div>
           <div className={styles.heroContainer}>
             <img src="/services-bg.png" alt="" />

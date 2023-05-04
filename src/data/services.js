@@ -1,0 +1,15 @@
+export const services = [
+  "Youtube Marketing",
+  "E-Learning",
+  "E-Commerce",
+  "SEO",
+  "Learning Management System",
+  "Test/Quiz Platform",
+  "Board Games",
+  "Metaverse Gaming",
+  "Linkedin Marketing",
+  "Influencer Marketing",
+  "Marketplace Management",
+  "Product Videography",
+  // "Multi-vendor E-commerce website",
+];

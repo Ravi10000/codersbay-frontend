@@ -2,7 +2,7 @@ import styles from "./service-item.module.scss";
 
 import { useState, useRef, useEffect } from "react";
 
-function ServiceItem({ name, children }) {
+function ServiceItem({ sku }) {
   const [showDesc, setShowDesc] = useState(false);
   const serviceItemRef = useRef(null);
   useEffect(() => {
@@ -17,31 +17,28 @@ function ServiceItem({ name, children }) {
     };
   }, [serviceItemRef]);
   return (
-    <>
-      {showDesc && <div className={styles.servicesItem}></div>}
-      <div
-        ref={serviceItemRef}
-        onClick={() => setShowDesc(true)}
-        className={`${styles.serviceItem} ${
-          showDesc && styles.showDescription
-        }`}
-      >
-        <div className={styles.serviceName}>
-          <p>{name}</p>
-          {showDesc && (
-            <img
-              src="/close.png"
-              alt=""
-              onClick={(e) => {
-                e.stopPropagation();
-                setShowDesc(false);
-              }}
-            />
-          )}
-        </div>
-        {showDesc && <div className={styles.desc}>{children}</div>}
+    <div
+      ref={serviceItemRef}
+      onClick={() => setShowDesc(true)}
+      className={`${styles.serviceItem} ${showDesc && styles.showDescription}`}
+    >
+      <div className={styles.serviceName}>
+        <p>{sku?.name}</p>
+        {showDesc && (
+          <img
+            src="/close.png"
+            alt=""
+            onClick={(e) => {
+              e.stopPropagation();
+              setShowDesc(false);
+            }}
+          />
+        )}
       </div>
-    </>
+      <div className={`${styles.desc} `}>
+        <p>{sku?.description}</p>
+      </div>
+    </div>
   );
 }
 

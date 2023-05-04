@@ -19,6 +19,14 @@ a {
   text-decoration: none;
 }
 
-button{
+button {
+  cursor: pointer;
+}
+
+.__cap {
+  text-transform: capitalize;
+}
+
+.__link, a {
   cursor: pointer;
 }
