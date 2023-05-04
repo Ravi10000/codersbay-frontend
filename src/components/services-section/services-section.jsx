@@ -6,8 +6,11 @@ function ServicesSection() {
   return (
     <section className={styles.services}>
       <div className={styles.servicesContainer}>
-        <div className={styles.card} >
-          <div className={styles.background} style={{backgroundImage: `url("./e-commerce.jpeg")`}}></div>
+        <div className={styles.card}>
+          <div
+            className={styles.background}
+            style={{ backgroundImage: `url("/e-commerce.jpeg")` }}
+          ></div>
           <p className={styles.cardTitle}>E-Commerce</p>
           <div className={styles.hoverContent}>
             <Link to="/services">
@@ -19,7 +22,10 @@ function ServicesSection() {
           </div>
         </div>
         <div className={styles.card}>
-          <div className={styles.background} style={{backgroundImage: `url("./professional.jpeg")`}}></div>
+          <div
+            className={styles.background}
+            style={{ backgroundImage: `url("/professional.jpeg")` }}
+          ></div>
           <p className={styles.cardTitle}>Professional Service</p>
           <div className={styles.hoverContent}>
             <Link to="/services">
@@ -39,8 +45,11 @@ function ServicesSection() {
             </Link>
           </div>
         </div>
-        <div className={styles.card} >
-          <div className={styles.background} style={{backgroundImage: `url("./erp.jpeg")`}}></div>
+        <div className={styles.card}>
+          <div
+            className={styles.background}
+            style={{ backgroundImage: `url("/erp.jpeg")` }}
+          ></div>
           <p className={styles.cardTitle}>ERP and CRM</p>
           <div className={styles.hoverContent}>
             <Link to="/services">
@@ -57,8 +66,11 @@ function ServicesSection() {
             </Link>
           </div>
         </div>
-        <div className={styles.card} >
-          <div className={styles.background} style={{backgroundImage: `url("./dm.webp")`}}></div>
+        <div className={styles.card}>
+          <div
+            className={styles.background}
+            style={{ backgroundImage: `url("/dm.webp")` }}
+          ></div>
           <p className={styles.cardTitle}>Digital Marketing</p>
           <div className={styles.hoverContent}>
             <Link to="/services">
@@ -76,7 +88,10 @@ function ServicesSection() {
           </div>
         </div>
         <div className={styles.card}>
-          <div className={styles.background} style={{backgroundImage: `url("./it.jpeg")`}}></div>
+          <div
+            className={styles.background}
+            style={{ backgroundImage: `url("/it.jpeg")` }}
+          ></div>
           <p className={styles.cardTitle}>IT Infrastructure</p>
           <div className={styles.hoverContent}>
             <Link to="/services">
@@ -94,7 +109,10 @@ function ServicesSection() {
           </div>
         </div>
         <div className={styles.card}>
-          <div className={styles.background} style={{backgroundImage: `url("./cloud.jpeg")`}}></div>
+          <div
+            className={styles.background}
+            style={{ backgroundImage: `url("/cloud.jpeg")` }}
+          ></div>
           <p className={styles.cardTitle}>Cloud Engineering</p>
           <div className={styles.hoverContent}>
             <Link to="/services">
@@ -117,8 +135,11 @@ function ServicesSection() {
             </Link>
           </div>
         </div>
-        <div className={styles.card} >
-          <div className={styles.background} style={{backgroundImage: `url("./gaming.webp")`}}></div>
+        <div className={styles.card}>
+          <div
+            className={styles.background}
+            style={{ backgroundImage: `url("/gaming.webp")` }}
+          ></div>
           <p className={styles.cardTitle}>Gaming</p>
           <div className={styles.hoverContent}>
             <Link to="/services">
@@ -139,7 +160,7 @@ function ServicesSection() {
           </div>
         </div>
       </div>
-      <div className={styles.clients} >
+      <div className={styles.clients}>
         <h3 className={styles.title}>Our Clients</h3>
         <div className={styles.serviceCompanies}>
           <Marquee autoFill={true} speed={50}>

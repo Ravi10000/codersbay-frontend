@@ -4,15 +4,16 @@
     flex-direction: column;
     gap: 10px;
     padding: 50px 25px;
-    .background{
+    .background {
       position: absolute;
       top: 0;
       left: 0;
       right: 0;
       bottom: 0;
-      background-color: red;background-repeat: no-repeat;
-        background-position: center;
-        background-size: cover;
+      // background-color: red;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
       filter: blur(1px);
       z-index: -1;
     }
@@ -24,16 +25,24 @@
       justify-content: center;
       gap: 10px;
       padding: 20px;
+      // background: url("/dm.webp");
       // background-image: url("/service-card-bg.png");
       background-repeat: no-repeat;
       background-position: center;
       background-size: cover;
       transition: all 0.2s ease-in-out;
+      position: relative;
       &:hover {
         .hoverContent {
           display: flex;
           animation: animateHoverContent 0.2s ease-in-out forwards;
         }
+        .background {
+          filter: brightness(0.35);
+        }
+      }
+      .background {
+        filter: brightness(0.5);
       }
       .cardTitle {
         line-height: 100%;
@@ -73,19 +82,17 @@
       color: var(--mainBrandClr);
       text-align: center;
       font-size: 1.5rem;
-      
     }
-    
-    .serviceCompanies {
 
+    .serviceCompanies {
       // width: 95vw;
       height: 20vh;
       padding: 50px 25px;
-      //  background-color: lightcoral; 
+      //  background-color: lightcoral;
       // margin: auto;
     }
   }
-  
+
   .statistics {
     display: flex;
     flex-direction: column;
