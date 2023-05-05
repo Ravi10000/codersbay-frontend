@@ -8,9 +8,6 @@ function AdminHeader() {
   console.log({ pathname });
   return (
     <header className={styles.adminHeader}>
-      <HashLink to="/">
-        <img src="/Logo White.png" alt="" className={styles.logo} />
-      </HashLink>
       <div className={styles.nav}>
         <HashLink
           to="/admin/messages"
@@ -18,7 +15,7 @@ function AdminHeader() {
             pathname === "/admin/messages" ? styles.active : ""
           }`}
         >
-          Messages
+          <p>Messages</p>
         </HashLink>
         <HashLink
           to="/admin/skus"
@@ -26,7 +23,15 @@ function AdminHeader() {
             pathname === "/admin/skus" ? styles.active : ""
           }`}
         >
-          SKUs
+          <p>SKUs</p>
+        </HashLink>
+        <HashLink
+          to="/admin/payments"
+          className={`${styles.link} ${
+            pathname === "/admin/payments" ? styles.active : ""
+          }`}
+        >
+          <p>Payments</p>
         </HashLink>
       </div>
     </header>

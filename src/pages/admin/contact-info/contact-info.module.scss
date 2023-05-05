@@ -1,21 +1,32 @@
-.contactInfo {
-  display: grid;
-  place-items: center;
-  gap: 5px;
-  margin: 50px 0;
+.container {
+  .main {
+    padding: 20px;
+    h1 {
+      color: var(--darkClr);
+      //   margin-bottom: 35px;
+    }
+    .contactInfo {
+      display: grid;
+      place-items: center;
+      gap: 5px;
+    }
+  }
 }
 
 @media (min-width: 1000px) {
-  .contactInfo {
-    margin: 50px 20px;
-    max-width: 1100px;
-    grid-template-columns: 1fr 1fr;
+  .container {
+    .main {
+      padding: 20px 80px;
+      .contactInfo {
+        max-width: 1100px;
+        grid-template-columns: 1fr 1fr;
+      }
+    }
   }
 }
 
 @media (min-width: 1400px) {
   .contactInfo {
-    margin: 50px 20px;
     max-width: none;
     display: flex;
     flex-wrap: wrap;

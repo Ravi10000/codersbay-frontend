@@ -4,8 +4,11 @@ import TextInput from "../../../../components/text-input/text-input";
 import CustomTextarea from "../../../../components/custom-textarea/custom-textarea";
 import { useForm } from "react-hook-form";
 import { editSku, saveSku } from "../../../../api/sku.rest";
+import { connect } from "react-redux";
+import { setFlash } from "../../../../redux/flash/flash.actions";
 
 function SkuPopup(props) {
+  const { setFlash } = props;
   const {
     register,
     handleSubmit,
@@ -37,8 +40,11 @@ function SkuPopup(props) {
           reset();
           props?.closePopup();
           await props?.handleFetchSkuDetails();
-
-          alert("Sku Added Successfully");
+          setFlash({
+            type: "success",
+            message: "Sku Added Successfully",
+          });
+          //   alert("Sku Added Successfully");
         }
       } else {
         const response = await editSku(props?.skuToEdit?._id, data);
@@ -46,8 +52,10 @@ function SkuPopup(props) {
           reset();
           props?.closePopup();
           await props?.handleFetchSkuDetails();
-
-          alert("Sku Edited Successfully");
+          setFlash({
+            type: "success",
+            message: "Sku Updated Successfully",
+          });
         }
       }
     } catch (err) {
@@ -89,4 +97,4 @@ function SkuPopup(props) {
     </form>
   );
 }
-export default SkuPopup;
+export default connect(null, { setFlash })(SkuPopup);

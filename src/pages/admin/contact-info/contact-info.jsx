@@ -19,10 +19,15 @@ function ContactInfoPage() {
     handleFetchContactDetails();
   }, []);
   return (
-    <div className={styles.contactInfo}>
-      {contactDetails?.map((data) => (
-        <ContactCard data={data} key={data?._id} />
-      ))}
+    <div className={styles.container}>
+      <div className={styles.main}>
+        <h1>All Messages</h1>
+        <div className={styles.contactInfo}>
+          {contactDetails?.map((data) => (
+            <ContactCard data={data} key={data?._id} />
+          ))}
+        </div>
+      </div>
     </div>
   );
 }

@@ -27,10 +27,10 @@ function SkuRecord({ sku, setSkuToEdit, openPopup, handleFetchSkuDetails }) {
             setSkuToEdit(sku);
           }}
         >
-          edit
+          Edit
         </button>
         <button className={styles.delete} onClick={handleDeleteSku}>
-          delete
+          Delete
         </button>
       </td>
     </tr>

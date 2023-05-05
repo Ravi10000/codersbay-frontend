@@ -9,7 +9,7 @@ const TopServices = () => {
       <h2 className={styles.title}>Out Top Services</h2>
       <div className={styles.servicesContainer}>
         {services?.map((service) => (
-          <div className={styles.serviceName}>
+          <div className={styles.serviceName} key={service}>
             <Link to={`/services/${service}`}>
               <p className="topText">{service}</p>
             </Link>

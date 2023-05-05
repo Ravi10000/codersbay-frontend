@@ -2,6 +2,9 @@
   --mainBrandClr: #2c2573;
   --darkClr: #1a232f;
   --lightTextClr: #8a9baf;
+  --success-clr: #335eea;
+  --error-clr: #ff3d71;
+  --info-clr: #fcbf49;
 }
 
 body {
@@ -42,29 +45,30 @@ a {
 }
 
 .__table {
-  /* padding: 20px; */
   border-collapse: collapse;
   border-radius: 5px;
-  border: 2px solid var(--lightTextClr);
+  border: 2px solid #ced4da;
 }
 
 .__table th,
 .__table td {
   padding: 10px 20px;
 }
-.__table tr {
-  border-bottom: 2px solid var(--lightTextClr);
-}
+
 .__table td {
-  border-right: 2px solid var(--lightTextClr);
+  max-width: 350px;
 }
+
+.__table tr:nth-child(2n) {
+  background-color: #e9ecef;
+}
+
 .__table td:last-child {
   border-right: none;
 }
 
 .__table th {
-  background: var(--darkClr);
+  background: #ced4da;
   font-weight: 500;
-  border-right: 2px solid var(--lightTextClr);
-  border-bottom: 2px solid var(--lightTextClr);
+  color: var(--darkClr);
 }

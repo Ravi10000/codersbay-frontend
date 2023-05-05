@@ -1,0 +1,27 @@
+.paymentsPage {
+  h1,
+  td,
+  th {
+    color: var(--darkClr);
+  }
+  h1 {
+    margin-bottom: 35px;
+  }
+  .main {
+    padding: 20px;
+  }
+  .tableContainer {
+    overflow: scroll;
+  }
+}
+
+@media (min-width: 1000px) {
+  .paymentsPage {
+    .main {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 20px 80px;
+    }
+  }
+}
