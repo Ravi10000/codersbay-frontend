@@ -1,0 +1,44 @@
+.adminHeader {
+  background: var(--mainBrandClr);
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 200000;
+  box-shadow: 4px 4px 64px rgba(0, 0, 0, 0.04);
+
+  .logo {
+    height: 45px;
+    width: fit-content;
+  }
+  .nav {
+    display: flex;
+    gap: 20px;
+    .link {
+      padding: 5px 20px;
+      border-radius: 50px;
+      border: 2px solid transparent;
+      &.active {
+        border-color: #fff;
+      }
+    }
+  }
+  .callToAction {
+    padding: 15px 32px;
+    border-radius: 50px;
+    border: none;
+    font-size: 16px;
+    font-weight: 600;
+    background: #fff;
+    color: var(--mainBrandClr);
+  }
+}
+
+@media (min-width: 768px) {
+  .adminHeader {
+    padding: 10px 80px;
+  }
+}

@@ -4,7 +4,7 @@ import Marquee from "react-fast-marquee";
 import ServiceItem from "./service-item/service-item";
 import { useParams, Link } from "react-router-dom";
 import { useEffect, useState } from "react";
-import { fetchSkuByServiceName } from "../../api/sku.res";
+import { fetchSkuByServiceName } from "../../api/sku.rest";
 function ServicesPage() {
   const { serviceName } = useParams();
   const [skus, setSkus] = useState([]);

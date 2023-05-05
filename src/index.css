@@ -1,6 +1,7 @@
 :root {
   --mainBrandClr: #2c2573;
   --darkClr: #1a232f;
+  --lightTextClr: #8a9baf;
 }
 
 body {
@@ -27,6 +28,43 @@ button {
   text-transform: capitalize;
 }
 
-.__link, a {
+.__link,
+a {
   cursor: pointer;
+}
+
+.marquee-container {
+  overflow-y: hidden;
+}
+
+.__tableContainer {
+  overflow: scroll;
+}
+
+.__table {
+  /* padding: 20px; */
+  border-collapse: collapse;
+  border-radius: 5px;
+  border: 2px solid var(--lightTextClr);
+}
+
+.__table th,
+.__table td {
+  padding: 10px 20px;
+}
+.__table tr {
+  border-bottom: 2px solid var(--lightTextClr);
+}
+.__table td {
+  border-right: 2px solid var(--lightTextClr);
+}
+.__table td:last-child {
+  border-right: none;
+}
+
+.__table th {
+  background: var(--darkClr);
+  font-weight: 500;
+  border-right: 2px solid var(--lightTextClr);
+  border-bottom: 2px solid var(--lightTextClr);
 }

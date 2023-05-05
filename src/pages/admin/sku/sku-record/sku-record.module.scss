@@ -1,0 +1,22 @@
+.skuRecord {
+  td {
+    color: var(--darkClr);
+  }
+  button {
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: none;
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+  }
+  .actionsContainer {
+    display: flex;
+    gap: 10px;
+    .edit {
+      background: #0077b6;
+    }
+    .delete {
+      background: #e63946;
+    }
+  }
+}

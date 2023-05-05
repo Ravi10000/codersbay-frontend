@@ -1,0 +1,38 @@
+.contactCard {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+  min-width: 300px;
+  max-width: 500px;
+  padding: 20px;
+  box-shadow: 4px 4px 64px rgba(0, 0, 0, 0.04);
+  p,
+  h3 {
+    text-align: start;
+    color: var(--darkClr);
+  }
+  .hightlight {
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+    color: var(--lightTextClr);
+  }
+  .head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .nameEmail {
+      display: flex;
+      flex-direction: column;
+      .name {
+        font-size: 1.2rem;
+        text-transform: capitalize;
+      }
+    }
+    .optionsIcon {
+      cursor: pointer;
+      height: 2rem;
+      width: fit-content;
+    }
+  }
+}

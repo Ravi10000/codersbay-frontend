@@ -2,9 +2,9 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  color: white;
+  color: #fff;
 }
-.App {
+.App.moveFooter {
   display: flex;
   flex-direction: column;
   justify-content: space-between;

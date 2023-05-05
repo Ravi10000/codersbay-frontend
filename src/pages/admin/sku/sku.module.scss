@@ -1,0 +1,31 @@
+.skuPage {
+  h1,
+  p {
+    color: var(--darkClr);
+  }
+
+  .head {
+    display: grid;
+    place-items: center;
+    gap: 10px;
+    margin: 20px;
+    .addBtn {
+      padding: 5px 20px;
+      background: #fff;
+      color: var(--darkClr);
+      border: 2px solid var(--darkClr);
+      border-radius: 50px;
+      font-weight: 500;
+      font-size: 1rem;
+    }
+  }
+}
+
+@media (min-width: 600px) {
+  .skuPage {
+    .head {
+      display: flex;
+      gap: 50px;
+    }
+  }
+}

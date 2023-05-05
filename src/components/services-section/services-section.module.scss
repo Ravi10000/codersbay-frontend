@@ -84,10 +84,10 @@
       font-size: 1.5rem;
     }
 
-    .serviceCompanies {
-      // width: 95vw;
+    .clientsContainer {
       height: 20vh;
       padding: 50px 25px;
+      overflow: hidden;
       //  background-color: lightcoral;
       // margin: auto;
     }
@@ -152,9 +152,12 @@
       }
     }
     .clients {
+      overflow: hidden;
       .clientsContainer {
+        overflow: hidden;
         padding: 20px 80px;
       }
+
     }
     .statistics {
       flex-direction: row;
