@@ -72,3 +72,6 @@ a {
   font-weight: 500;
   color: var(--darkClr);
 }
+img {
+  object-fit: contain;
+}

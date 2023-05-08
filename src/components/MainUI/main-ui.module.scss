@@ -83,7 +83,7 @@
       .sliderContainer {
         display: block;
         .slider {
-          max-width: 500px;
+          max-width: 400px;
           height: fit-content;
         }
       }
@@ -99,6 +99,11 @@
     .content {
       gap: 200px;
       justify-content: center;
+      .sliderContainer {
+        .slider {
+          max-width: 500px;
+        }
+      }
       .nextSectionTitle {
         font-size: 72px;
       }
