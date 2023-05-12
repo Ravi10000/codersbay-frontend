@@ -1,0 +1,23 @@
+.addPayment {
+  padding-bottom: 20px;
+  width: 450px;
+  // width: 100%;
+  // display: flex;
+  // flex-direction: column;
+  // align-items: center;
+  p,
+  .title {
+    color: var(--darkClr);
+  }
+  .title {
+    // align-self: flex-start;
+    margin-bottom: 10px;
+  }
+  .addPaymentForm {
+    width: 100%;
+    max-width: 450px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+}
